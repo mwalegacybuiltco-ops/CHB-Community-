@@ -1,6 +1,6 @@
 window.CHB_COMMUNITY = {
   // REQUIRED: CSV feed from your Google Sheet (published as CSV)
-  FEED_CSV_URL: "PASTE_YOUR_CSV_URL_HERE",
+  FEED_CSV_URL: "https://docs.google.com/spreadsheets/d/1kOQgSQqKZTaC-hWGWnsUn8vwpLy3FBc7dEf407OIUig/edit?usp=sharing",
 
   // REQUIRED: Your Google Form link for posting to the community
   POST_FORM_URL: "PASTE_YOUR_POST_GOOGLE_FORM_URL_HERE",
