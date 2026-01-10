@@ -1,16 +1,12 @@
 window.CHB_COMMUNITY = {
-  // REQUIRED: CSV feed from your Google Sheet (published as CSV)
-  FEED_CSV_URL: "https://docs.google.com/spreadsheets/d/1kOQgSQqKZTaC-hWGWnsUn8vwpLy3FBc7dEf407OIUig/edit?usp=sharing",
+  FEED_CSV_URL: "https://docs.google.com/spreadsheets/d/1kOQgSQqKZTaC-hWGWnsUn8vwpLy3FBc7dEf407OIUig/pub?output=csv",
 
-  // REQUIRED: Your Google Form link for posting to the community
-  POST_FORM_URL: "https://docs.google.com/forms/d/e/1FAIpQLScGhWFqYLmFh06snGMdVGbftUCLfZPANt-RbI6phUbHMmEAdw/viewform?usp=headerg",
+  POST_FORM_URL: "https://docs.google.com/forms/d/e/1FAIpQLScGhWFqYLmFh06snGMdVGbftUCLfZPANt-RbI6phUbHMmEAdw/viewform",
 
-  // OPTIONAL LINKS (tabs)
   SHOP_URL: "PASTE_YOUR_SHOP_URL_HERE",
   EVENTS_URL: "PASTE_YOUR_EVENTS_URL_HERE",
   FILES_URL: "PASTE_YOUR_FILES_URL_HERE",
 
-  // Affiliate Menu links (optional)
   MENU_URLS: {
     start: "PASTE_START_HERE_URL_HERE",
     training: "PASTE_TRAINING_URL_HERE",
@@ -19,17 +15,15 @@ window.CHB_COMMUNITY = {
     links: "PASTE_IMPORTANT_LINKS_URL_HERE"
   },
 
-  // Form column names (must match the CSV headers coming from Google Forms/Sheets)
   FIELDS: {
-  timestamp: "Timestamp",
-  name: "Display name",
-  channel: "Channel",
-  post: "Post",
-  photo: "pup pics",
-  status: "status",
-  pinned: "pinned"
-},
-
+    timestamp: "Timestamp",
+    name: "Display name",
+    channel: "Channel",
+    post: "Post",
+    photo: "pup pics",
+    status: "status",
+    pinned: "pinned"
+  },
 
   CHANNELS: [
     "Announcements",
