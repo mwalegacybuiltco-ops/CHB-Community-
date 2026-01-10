@@ -263,12 +263,24 @@ async function loadFeed(){
 }
 
 function openPostForm(){
-  if(!CFG.POST_FORM_URL || CFG.POST_FORM_URL.includes("PASTE_")){
-    showModal(`<div>Add your Google Form link in <b>config.js</b> → <b>POST_FORM_URL</b>.</div>`);
+  ifunction openCommentForm(postId){
+  if(!CFG.COMMENT_FORM_URL || !CFG.COMMENT_FORM || String(CFG.COMMENT_FORM_URL).includes("PASTE_")){
+    showModal(`<div>Add your comment form settings in <b>config.js</b> → <b>COMMENT_FORM_URL</b> and <b>COMMENT_FORM</b>.</div>`);
     return;
   }
-  window.open(CFG.POST_FORM_URL, "_blank", "noopener");
+
+  const f = CFG.COMMENT_FORM;
+  const displayName = getSession().name || localStorage.getItem("chb_name") || "";
+
+  const url =
+    `${CFG.COMMENT_FORM_URL}?usp=pp_url` +
+    `&${f.postIdEntry}=${encodeURIComponent(postId)}` +
+    `&${f.nameEntry}=${encodeURIComponent(displayName)}` +
+    `&${f.rulesEntry}=${encodeURIComponent(f.rulesValue)}`;
+
+  window.open(url, "_blank", "noopener,noreferrer");
 }
+
 function openShop(){
   if(!CFG.SHOP_URL || CFG.SHOP_URL.includes("PASTE_")){
     showModal(`<div>Add your shop link in <b>config.js</b> → <b>SHOP_URL</b>.</div>`);
