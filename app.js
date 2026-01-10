@@ -189,10 +189,17 @@ function renderFeed(targetEl, posts, opts = {}){
         <img src="${escapeHtml(photo)}" alt="Community photo" loading="lazy" />
       </div>` : "";
 
+    // Post ID = the post timestamp string. We keep it visible + copyable to make commenting easy.
+    const postId = getField(p,"timestamp") || "";
+    const postIdSafe = escapeHtml(postId);
+
     return `
       <article class="card ${pinned ? "pinned":""}">
         <div class="meta">
-          <div><span class="name">${name}</span> <span class="tag">${ch}</span></div>
+          <div class="metaTop">
+            <div><span class="name">${name}</span> <span class="tag">${ch}</span></div>
+            <button class="btn tiny copyPostId" type="button" data-postid="${postIdSafe}">Copy Post ID</button>
+          </div>
           <div>${ts}${pinned ? " · 📌 Pinned" : ""}</div>
         </div>
         <div class="text">${text}</div>
@@ -260,8 +267,7 @@ function openPostForm(){
     showModal(`<div>Add your Google Form link in <b>config.js</b> → <b>POST_FORM_URL</b>.</div>`);
     return;
   }
-  window.location.href = CFG.POST_FORM_URL;
-
+  window.open(CFG.POST_FORM_URL, "_blank", "noopener");
 }
 function openShop(){
   if(!CFG.SHOP_URL || CFG.SHOP_URL.includes("PASTE_")){
@@ -290,6 +296,14 @@ function copyText(text){
   navigator.clipboard?.writeText(text);
   showModal(`<div>Copied to clipboard ✅</div><div style="margin-top:8px"><b>${escapeHtml(text)}</b></div>`);
 }
+
+// Copy Post ID button (uses the post Timestamp as the ID)
+document.addEventListener("click", (e)=>{
+  const btn = e.target.closest?.(".copyPostId");
+  if(!btn) return;
+  const id = btn.getAttribute("data-postid") || "";
+  copyText(id);
+});
 
 function getSession(){
   return {

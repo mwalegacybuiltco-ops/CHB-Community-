@@ -55,7 +55,21 @@ body{
   background: linear-gradient(135deg, var(--purple), var(--gold));
   box-shadow: 0 10px 22px rgba(107,63,180,.22), 0 10px 22px rgba(216,179,90,.16);
 }
+.btn.tiny{
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:12px;
+  line-height:1;
+  background: rgba(15,15,20,.45);
+}
 .btn.full{width:100%}
+
+.metaTop{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
 
 .tabs{
   display:flex;
