@@ -21,14 +21,15 @@ window.CHB_COMMUNITY = {
 
   // Form column names (must match the CSV headers coming from Google Forms/Sheets)
   FIELDS: {
-    timestamp: "Timestamp",
-    name: "Display Name",
-    channel: "Channel",
-    post: "Post",
-    photo: "Photo Link",
-    status: "status",
-    pinned: "pinned"
-  },
+  timestamp: "Timestamp",
+  name: "Display name",
+  channel: "Channel",
+  post: "Post",
+  photo: "pup pics",
+  status: "status",
+  pinned: "pinned"
+},
+
 
   CHANNELS: [
     "Announcements",
