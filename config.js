@@ -4,7 +4,6 @@ window.CHB_COMMUNITY = {
   POST_FORM_URL: "https://docs.google.com/forms/d/e/1FAIpQLScGhWFqYLmFh06snGMdVGbftUCLfZPANt-RbI6phUbHMmEAdw/viewform",
 
   COMMENT_FORM_URL: "https://docs.google.com/forms/d/e/1FAIpQLScH6C3Qt7MiJIyrjPBV7LawcdoMIc2-pqGVwrBPmm3I8Fx2GA/viewform",
-
   COMMENT_FORM: {
     postIdEntry: "entry.1652175336",
     nameEntry: "entry.14847401",
@@ -29,7 +28,7 @@ window.CHB_COMMUNITY = {
 
   FIELDS: {
     timestamp: "Timestamp",
-    name: "Display Name",
+    name: "Display name",
     channel: "Channel",
     post: "Post",
     photo: "pup pics",
