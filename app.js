@@ -316,6 +316,13 @@ document.addEventListener("click", (e)=>{
   const id = btn.getAttribute("data-postid") || "";
   copyText(id);
 });
+document.addEventListener("click", (e)=>{
+  const btn = e.target.closest?.(".replyBtn");
+  if(!btn) return;
+  const id = btn.getAttribute("data-postid") || "";
+  if(!id) return;
+  openCommentForm(id);
+});
 
 function getSession(){
   return {
