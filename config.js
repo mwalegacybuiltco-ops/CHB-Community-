@@ -17,7 +17,7 @@ window.CHB_COMMUNITY = {
 
   FIELDS: {
     timestamp: "Timestamp",
-    name: "Display name",
+    name: "Display Name",
     channel: "Channel",
     post: "Post",
     photo: "pup pics",
