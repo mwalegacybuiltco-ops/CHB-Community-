@@ -3,7 +3,7 @@ window.CHB_COMMUNITY = {
   FEED_CSV_URL: "https://docs.google.com/spreadsheets/d/1kOQgSQqKZTaC-hWGWnsUn8vwpLy3FBc7dEf407OIUig/edit?usp=sharing",
 
   // REQUIRED: Your Google Form link for posting to the community
-  POST_FORM_URL: "https://docs.google.com/spreadsheets/d/1artXHqFrVUOH6e0IbnhJ9xF-DOR1SmI6y5YzgppdNUk/edit?usp=sharing",
+  POST_FORM_URL: "https://docs.google.com/forms/d/e/1FAIpQLScGhWFqYLmFh06snGMdVGbftUCLfZPANt-RbI6phUbHMmEAdw/viewform?usp=headerg",
 
   // OPTIONAL LINKS (tabs)
   SHOP_URL: "PASTE_YOUR_SHOP_URL_HERE",
