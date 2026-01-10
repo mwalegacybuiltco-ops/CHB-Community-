@@ -263,7 +263,14 @@ async function loadFeed(){
 }
 
 function openPostForm(){
-  ifunction openCommentForm(postId){
+  if(!CFG.POST_FORM_URL || String(CFG.POST_FORM_URL).includes("PASTE_")){
+    showModal(`<div>Add your Google Form link in <b>config.js</b> → <b>POST_FORM_URL</b>.</div>`);
+    return;
+  }
+  window.open(CFG.POST_FORM_URL, "_blank", "noopener,noreferrer");
+}
+
+function openCommentForm(postId){
   if(!CFG.COMMENT_FORM_URL || !CFG.COMMENT_FORM || String(CFG.COMMENT_FORM_URL).includes("PASTE_")){
     showModal(`<div>Add your comment form settings in <b>config.js</b> → <b>COMMENT_FORM_URL</b> and <b>COMMENT_FORM</b>.</div>`);
     return;
@@ -280,6 +287,7 @@ function openPostForm(){
 
   window.open(url, "_blank", "noopener,noreferrer");
 }
+
 
 function openShop(){
   if(!CFG.SHOP_URL || CFG.SHOP_URL.includes("PASTE_")){
