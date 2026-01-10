@@ -288,7 +288,6 @@ function openCommentForm(postId){
   window.open(url, "_blank", "noopener,noreferrer");
 }
 
-
 function openShop(){
   if(!CFG.SHOP_URL || CFG.SHOP_URL.includes("PASTE_")){
     showModal(`<div>Add your shop link in <b>config.js</b> → <b>SHOP_URL</b>.</div>`);
