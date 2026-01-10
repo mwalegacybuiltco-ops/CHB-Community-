@@ -1,5 +1,5 @@
 window.CHB_COMMUNITY = {
-  FEED_CSV_URL: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSYGu4rcdcKRjLsx0jNAcQuPswjveFrnDJ5hbh7I-o84DJvA1XyR9z2H2ma4t5o2BNaOVINGuIcYcTM/pub?output=csv",
+  FEED_CSV_URL: "https://docs.google.com/spreadsheets/d/1artXHqFrVUOH6e0IbnhJ9xF-DOR1SmI6y5YzgppdNUk/edit?usp=sharing",
 
   POST_FORM_URL: "https://docs.google.com/forms/d/e/1FAIpQLScGhWFqYLmFh06snGMdVGbftUCLfZPANt-RbI6phUbHMmEAdw/viewform",
 
