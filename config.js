@@ -1,5 +1,16 @@
 window.CHB_COMMUNITY = {
   FEED_CSV_URL: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSYGu4rcdcKRjLsx0jNAcQuPswjveFrnDJ5hbh7I-o84DJvA1XyR9z2H2ma4t5o2BNaOVINGuIcYcTM/pub?output=csv",
+COMMENT_FORM_URL: "https://docs.google.com/forms/d/e/1FAIpQLScH6C3Qt7MiJIyrjPBV7LawcdoMIc2-pqGVwrBPmm3I8Fx2GA/viewform",
+
+COMMENT_FORM: {
+  postIdEntry: "entry.1652175336",
+  nameEntry: "entry.14847401",
+  commentEntry: "entry.259428025",
+  rulesEntry: "entry.1849769871",
+  rulesValue: "Option 1"
+},
+
+COMMENTS_CSV_URL: "PASTE_COMMENTS_CSV_PUB_LINK_HERE"
 
   POST_FORM_URL: "https://docs.google.com/forms/d/e/1FAIpQLScGhWFqYLmFh06snGMdVGbftUCLfZPANt-RbI6phUbHMmEAdw/viewform",
 
