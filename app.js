@@ -260,7 +260,8 @@ function openPostForm(){
     showModal(`<div>Add your Google Form link in <b>config.js</b> → <b>POST_FORM_URL</b>.</div>`);
     return;
   }
-  window.open(CFG.POST_FORM_URL, "_blank", "noopener");
+  window.location.href = CFG.POST_FORM_URL;
+
 }
 function openShop(){
   if(!CFG.SHOP_URL || CFG.SHOP_URL.includes("PASTE_")){
